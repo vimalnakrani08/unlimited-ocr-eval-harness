@@ -1,0 +1,8 @@
+# Pinned to the versions used for the published measurements. mlx-vlm's
+# tokenizer/detokenization behavior is version-specific (see README → "The MLX
+# runner"), so reproducing the exact numbers needs these versions.
+mlx==0.31.2
+mlx-vlm==0.6.3
+pillow==12.3.0
+rapidfuzz==3.14.5
+huggingface_hub==1.21.0

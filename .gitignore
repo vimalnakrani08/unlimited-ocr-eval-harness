@@ -1,0 +1,12 @@
+*.gguf
+*.safetensors
+.venv/
+__pycache__/
+*.pyc
+results/
+models/
+corpus/
+base_model/
+*.orig
+environment.txt
+.DS_Store
