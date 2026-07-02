@@ -82,7 +82,7 @@ Requires Apple Silicon with enough unified memory for the largest variant
 These scripts produced two published per-quant ladders for baidu/Unlimited-OCR,
 each scored the same way against the same corpus, grouped in one collection:
 
-- **Collection:** <https://huggingface.co/collections/vimalnakrani/unlimited-ocr-mlx-quants-with-measured-eval-ladder-6a45e49413447076db7a6bf0>
+- **Collection:** <https://huggingface.co/collections/vimalnakrani/unlimited-ocr-mlx-quants-with-measured-eval-ladder>
 - **MLX** ladder (this harness): `vimalnakrani/unlimited-ocr-{bf16,8bit,6bit,4bit,4bit-mixed}-mlx`
 - **GGUF** ladder (a separate llama.cpp runner over the same corpus and scoring):
   <https://huggingface.co/vimalnakrani/unlimited-ocr-gguf>
