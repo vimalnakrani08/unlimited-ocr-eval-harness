@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # 02_convert.sh — BF16 MLX conversion, smoke test, then the standard quant ladder.
-# Lesson baked in from the GGUF release we reviewed: verify the conversion
-# works BEFORE spending time quantizing it.
+# Smoke-test the conversion before spending time quantizing it.
 set -euo pipefail
 source .venv/bin/activate
 

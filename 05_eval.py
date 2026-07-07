@@ -4,7 +4,7 @@
 Runs every model variant over the corpus, computes CER/WER against exact
 ground truth, records tokens/sec and peak memory, writes:
 
-  results/results.json      (machine-readable, feeds 06_make_cards.py)
+  results/results.json      (machine-readable, per-page and per-tier metrics)
   results/results_table.md  (human-readable summary)
 
 CER = Levenshtein(char) / len(ref); WER analogous on whitespace tokens.
@@ -196,9 +196,8 @@ def write_table(results, out_md):
             "the CLI 4-bit conversion with only the vision→language projector kept "
             "float, everything else identical (verified by dtype-diff). Single "
             "deterministic run; near the 4-bit stability cliff, page-level outcomes are "
-            "sensitive to small precision changes — the ablation's 0.00% numeric tier "
-            "reflects one loop page moving tiers (numeric_06 stops looping, dense_07 "
-            "starts), not a numeric-tier advantage.",
+            "sensitive to small precision changes, so read per-tier differences with "
+            "caution.",
         ]
     out_md.write_text("\n".join(lines) + "\n")
 

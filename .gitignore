@@ -10,3 +10,5 @@ base_model/
 *.orig
 environment.txt
 .DS_Store
+CLAUDE.md
+.claude/
